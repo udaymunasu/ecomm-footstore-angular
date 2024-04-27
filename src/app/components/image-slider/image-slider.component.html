@@ -1,0 +1,11 @@
+<div *ngIf="imagePaths.length > 1" class="slider">
+    <div class="slides" [style.transform]="'translateX(' + slideOffset + 'px)'">
+        <img *ngFor="let imagePath of imagePaths; let i = index" class="slide" [src]="imagePath" alt=""
+            (load)="onSlideLoad()">
+    </div>
+    <button class="prev" (click)="prevSlide()" *ngIf="imagePaths.length > 1">&#10094;</button>
+    <button class="next" (click)="nextSlide()" *ngIf="imagePaths.length > 1">&#10095;</button>
+</div>
+<div *ngIf="imagePaths.length === 1">
+    <img class="single-image" [src]="imagePaths[0]" alt="" (load)="onSlideLoad()">
+</div>

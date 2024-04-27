@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../../loans project/loans-backend"
+		},
+		{
+			"path": "../../../../loans project/loans-ui"
+		},
+		{
+			"path": "../../../../backend"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,37 @@
+.category-routes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+
+.category-item {
+    text-align: center;
+    width: 150px; // Adjust width as needed
+
+    img {
+        width: 100px; // Adjust size as needed
+        height: 100px; // Adjust size as needed
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    a {
+        display: block;
+        margin-top: 10px;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover {
+            color: #007bff;
+        }
+    }
+}

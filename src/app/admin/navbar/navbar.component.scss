@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #343a40; // Sidebar background color
+    color: #fff; // Text color
+    padding-top: 20px;
+    .nav-item {
+      padding: 10px 20px;
+      &.active {
+        background-color: #495057; // Active item background color
+      }
+      .nav-link {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          color: #ffffff80; // Hover color with opacity
+        }
+      }
+    }
+  }
+  
